@@ -52,7 +52,7 @@
 
   h1,h2,h3{font-family:'Source Serif 4',serif;font-weight:600;margin:0;letter-spacing:-0.01em;}
 
-  .wrap{max-width:900px;margin:0 auto;padding:0 32px;}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 36px;}
 
   /* ---------- nav ---------- */
   nav{
@@ -90,7 +90,7 @@
       radial-gradient(360px 200px at 60% 40%, rgba(242,153,74,0.10), transparent 65%);
     border-bottom:1px solid var(--line);
   }
-  .hero-row{display:flex;gap:34px;align-items:flex-start;position:relative;z-index:1;}
+  .hero-row{display:flex;gap:38px;align-items:flex-start;position:relative;z-index:1;}
   .hero-illustration{
     position:absolute;right:-30px;top:-10px;width:420px;height:320px;
     z-index:0;pointer-events:none;
@@ -100,7 +100,7 @@
   .hero-illustration svg{width:100%;height:100%;}
   .avatar{
     flex:0 0 auto;
-    width:128px;height:128px;border-radius:50%;
+    width:140px;height:140px;border-radius:50%;
     padding:4px;
     background:linear-gradient(135deg, var(--blue), var(--teal));
     box-shadow:0 8px 28px -8px rgba(38,87,201,0.45), 0 2px 8px rgba(0,168,150,0.2);
@@ -122,31 +122,31 @@
   }
   .eyebrow{
     display:inline-block;
-    font-family:'Roboto Mono',monospace;font-size:12px;color:var(--blue);
+    font-family:'Roboto Mono',monospace;font-size:13px;color:var(--blue);
     text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;
-    background:var(--blue-soft);padding:4px 10px;border-radius:20px;
+    background:var(--blue-soft);padding:5px 11px;border-radius:20px;
     box-shadow:0 1px 3px rgba(38,87,201,0.15);
   }
   h1.name{
-    font-size:52px;margin-bottom:10px;letter-spacing:-0.02em;
+    font-size:58px;margin-bottom:12px;letter-spacing:-0.02em;
     background:linear-gradient(120deg, var(--ink) 35%, var(--blue) 75%, var(--teal) 100%);
     -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
   }
-  .role{color:var(--ink-soft);font-size:16.5px;margin-bottom:20px;font-style:italic;max-width:56ch;}
-  .contact-row{display:flex;flex-wrap:wrap;gap:18px;font-family:'Roboto Mono',monospace;font-size:13px;}
+  .role{color:var(--ink-soft);font-size:18px;margin-bottom:22px;font-style:italic;max-width:64ch;}
+  .contact-row{display:flex;flex-wrap:wrap;gap:20px;font-family:'Roboto Mono',monospace;font-size:13.5px;}
   .contact-pending{color:var(--ink-soft);opacity:0.55;border-bottom:1px dashed var(--line);cursor:default;}
 
   /* ---------- sections ---------- */
-  section{padding:64px 0;border-bottom:1px solid var(--line);}
+  section{padding:72px 0;border-bottom:1px solid var(--line);}
   section:last-of-type{border-bottom:none;}
   .section-head{display:flex;align-items:center;gap:14px;margin-bottom:32px;}
   .icon-badge{
-    flex:0 0 auto;width:36px;height:36px;border-radius:50%;
+    flex:0 0 auto;width:40px;height:40px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;
     box-shadow:0 2px 8px -3px rgba(26,27,46,0.2);
   }
-  .icon-badge svg{width:18px;height:18px;}
-  .section-head h2{font-size:28px;}
+  .icon-badge svg{width:20px;height:20px;}
+  .section-head h2{font-size:31px;}
 
   #bio .icon-badge{background:var(--blue-soft);color:var(--blue);}
   #education .icon-badge{background:var(--amber-soft);color:var(--amber);}
@@ -156,11 +156,11 @@
   #misc .icon-badge{background:var(--teal-soft);color:var(--teal);}
   #cv .dot{background:var(--blue);}
 
-  .bio p{max-width:62ch;color:var(--ink);}
-  .interests{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;}
+  .bio p{color:var(--ink);font-size:16.5px;text-align:justify;hyphens:auto;}
+  .interests{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
   .interests span{
-    font-family:'Roboto Mono',monospace;font-size:12px;
-    padding:7px 13px;border-radius:20px;color:var(--blue);
+    font-family:'Roboto Mono',monospace;font-size:12.5px;
+    padding:8px 15px;border-radius:20px;color:var(--blue);
     background:var(--blue-soft);
     box-shadow:0 2px 6px -2px rgba(38,87,201,0.25);
     transition:transform 0.15s ease;
@@ -169,25 +169,25 @@
 
   /* publications */
   .pub-year{
-    font-family:'Roboto Mono',monospace;font-size:12px;color:#fff;
+    font-family:'Roboto Mono',monospace;font-size:13.5px;color:#fff;
     background:linear-gradient(120deg, var(--blue), var(--teal));
     display:inline-block;padding:4px 12px;border-radius:20px;
     margin:28px 0 12px;box-shadow:0 3px 10px -3px rgba(38,87,201,0.4);
   }
   .pub-year:first-child{margin-top:0;}
   .pub{
-    padding:16px 18px;border-radius:12px;margin-bottom:12px;background:var(--panel);
+    padding:20px 24px;border-radius:12px;margin-bottom:14px;background:var(--panel);
     border-left:3px solid var(--blue-soft);
     transition:transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
   }
   .pub:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(26,27,46,0.25);border-left-color:var(--blue);}
-  .pub-title{font-family:'Source Serif 4',serif;font-size:17px;font-weight:600;margin-bottom:4px;}
-  .pub-meta{font-size:13px;color:var(--ink-soft);}
+  .pub-title{font-family:'Source Serif 4',serif;font-size:18.5px;font-weight:600;margin-bottom:5px;}
+  .pub-meta{font-size:14px;color:var(--ink-soft);}
   .pub-meta strong{text-decoration:underline;text-underline-offset:2px;}
   .pub-meta em{font-style:normal;font-weight:700;color:var(--blue);}
   .in-press{font-style:italic;font-weight:500;color:var(--amber);}
   .pub-num{
-    display:inline-block;font-family:'Roboto Mono',monospace;font-size:11px;font-weight:500;
+    display:inline-block;font-family:'Roboto Mono',monospace;font-size:13px;font-weight:500;
     color:var(--ink-soft);margin-right:8px;vertical-align:middle;
   }
   .pub-tag{
@@ -201,30 +201,32 @@
 
 
   /* education */
+  .edu-grid{display:flex;flex-direction:column;gap:14px;}
   .edu-item{
-    padding:16px 18px;border-radius:12px;margin-bottom:12px;background:var(--panel);
+    padding:20px 24px;border-radius:12px;margin-bottom:0;background:var(--panel);
     border-left:3px solid var(--amber-soft);
     transition:transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
   }
   .edu-item:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(26,27,46,0.25);border-left-color:var(--amber);}
-  .edu-degree{font-family:'Source Serif 4',serif;font-size:17px;font-weight:600;margin-bottom:2px;}
-  .edu-meta{font-size:13px;color:var(--ink-soft);}
-  .edu-dates{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--teal);}
+  .edu-degree{font-family:'Source Serif 4',serif;font-size:18.5px;font-weight:600;margin-bottom:3px;}
+  .edu-meta{font-size:14px;color:var(--ink-soft);}
+  .edu-dates{font-family:'Roboto Mono',monospace;font-size:13.5px;color:var(--teal);}
 
   /* awards */
+  .award-grid{display:flex;flex-direction:column;gap:14px;}
   .award-item{
-    display:flex;gap:14px;align-items:baseline;padding:14px 18px;border-radius:12px;margin-bottom:10px;background:var(--panel);
+    display:flex;gap:16px;align-items:baseline;padding:18px 24px;border-radius:12px;margin-bottom:0;background:var(--panel);
     border-left:3px solid var(--blue-soft);
     transition:transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
   }
   .award-item:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(26,27,46,0.25);border-left-color:var(--blue);}
-  .award-year{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--blue);flex:0 0 auto;}
-  .award-name{font-weight:600;}
-  .award-org{font-size:13px;color:var(--ink-soft);}
+  .award-year{font-family:'Roboto Mono',monospace;font-size:13.5px;color:var(--blue);flex:0 0 auto;}
+  .award-name{font-weight:600;font-size:15px;}
+  .award-org{font-size:14px;color:var(--ink-soft);}
 
   /* misc */
   .misc-item{
-    padding:14px 18px;border-radius:12px;margin-bottom:8px;background:var(--panel);font-size:14px;color:var(--ink-soft);
+    padding:18px 24px;border-radius:12px;margin-bottom:10px;background:var(--panel);font-size:14.5px;color:var(--ink-soft);
     border-left:3px solid var(--teal-soft);
   }
 
@@ -243,9 +245,9 @@
   .talk:nth-child(1)::before{border-color:var(--blue);}
   .talk:nth-child(2)::before{border-color:var(--teal);}
   .talk:nth-child(3)::before{border-color:var(--amber);}
-  .talk-date{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--ink-soft);}
-  .talk-title{font-weight:600;margin:2px 0;}
-  .talk-place{font-size:13px;color:var(--ink-soft);}
+  .talk-date{font-family:'Roboto Mono',monospace;font-size:13.5px;color:var(--ink-soft);}
+  .talk-title{font-weight:600;margin:2px 0;font-size:15px;}
+  .talk-place{font-size:14px;color:var(--ink-soft);}
   .talk-tag{
     display:inline-block;font-family:'Roboto Mono',monospace;font-size:10px;font-weight:500;
     border-radius:4px;padding:2px 7px;margin-right:8px;vertical-align:middle;
@@ -253,7 +255,7 @@
   }
 
   /* cv */
-  footer{padding:44px 0 64px;color:var(--ink-soft);font-size:13px;}
+  footer{padding:48px 0 68px;color:var(--ink-soft);font-size:13.5px;}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
 
   .note{
@@ -374,6 +376,7 @@
   <div class="wrap">
     <div class="section-head"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11.5v4.5c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/></svg></span><h2>Education</h2></div>
 
+    <div class="edu-grid">
     <div class="edu-item">
       <div class="edu-degree">Ph.D. in Mechanical Engineering</div>
       <div class="edu-meta">KAIST &middot; <span class="edu-dates">2024.09 &ndash; present</span></div>
@@ -388,6 +391,7 @@
     <div class="edu-item">
       <div class="edu-degree">B.S. in Mechanical Engineering</div>
       <div class="edu-meta">Inha University &middot; <span class="edu-dates">2017.03 &ndash; 2022.08</span></div>
+    </div>
     </div>
   </div>
 </section>
@@ -460,6 +464,7 @@
   <div class="wrap">
     <div class="section-head"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v4a4 4 0 0 1-8 0V4z"/><path d="M8 5H5.5a2.5 2.5 0 0 0 2.5 4.5"/><path d="M16 5h2.5A2.5 2.5 0 0 1 16 9.5"/><path d="M12 12v3"/><path d="M9 20h6"/><path d="M10 15h4l1 5H9l1-5z"/></svg></span><h2>Awards &amp; Honors</h2></div>
 
+    <div class="award-grid">
     <div class="award-item">
       <div class="award-year">2025</div>
       <div>
@@ -473,6 +478,7 @@
         <div class="award-name">Excellent Paper Award, 2024 KSME-CAE Conference</div>
         <div class="award-org">Korean Society of Mechanical Engineers &mdash; CAE Division</div>
       </div>
+    </div>
     </div>
   </div>
 </section>
