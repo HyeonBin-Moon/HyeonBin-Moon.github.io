@@ -65,6 +65,12 @@
   nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px;position:relative;}
   nav .brand{font-family:'Public Sans',sans-serif;font-size:15px;letter-spacing:0.04em;color:var(--ink-soft);}
   nav .brand::before{content:"●";color:var(--blue);margin-right:8px;font-size:8px;vertical-align:middle;}
+  .brand-group{display:flex;align-items:center;gap:12px;}
+  .nav-updated{
+    font-family:'Public Sans',sans-serif;font-size:12px;color:var(--teal);
+    background:var(--teal-soft);padding:3px 10px;border-radius:12px;
+    white-space:nowrap;
+  }
   nav ul{list-style:none;display:flex;gap:20px;margin:0;padding:0;}
   nav a{border:none;font-size:15px;color:var(--ink-soft);font-family:'Public Sans',sans-serif;padding-bottom:2px;position:relative;}
   nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:2px;background:linear-gradient(90deg,var(--blue),var(--teal));transition:right 0.2s ease;}
@@ -133,7 +139,11 @@
     background:linear-gradient(120deg, var(--ink) 35%, var(--blue) 75%, var(--teal) 100%);
     -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
   }
-  .role{color:var(--ink-soft);font-size:20.5px;margin-bottom:22px;font-style:italic;max-width:64ch;}
+  .role-affiliation{color:var(--ink-soft);font-size:16.5px;margin:0 0 6px;max-width:64ch;}
+  .role-tagline{
+    color:var(--ink-soft);font-size:18px;margin:0 0 22px;font-style:italic;
+    max-width:60ch;
+  }
   .contact-row{display:flex;flex-wrap:wrap;gap:20px;font-family:'Public Sans',sans-serif;font-size:15.5px;}
   .contact-pending{color:var(--ink-soft);opacity:0.55;border-bottom:1px dashed var(--line);cursor:default;}
 
@@ -252,7 +262,6 @@
   /* cv */
   footer{padding:48px 0 68px;color:var(--ink-soft);font-size:15.5px;}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
-  .last-updated{font-family:'Public Sans',sans-serif;font-size:14.5px;color:var(--ink-soft);opacity:0.75;}
 
   .note{
     font-family:'Public Sans',sans-serif;font-size:14.5px;font-weight:500;color:var(--teal);
@@ -261,6 +270,7 @@
 
   @media (max-width:680px){
     .nav-toggle{display:flex;}
+    .nav-updated{display:none;}
     nav ul{
       display:none;position:absolute;left:0;right:0;top:100%;
       flex-direction:column;gap:0;
@@ -309,7 +319,10 @@
 
 <nav>
   <div class="wrap">
-    <span class="brand">HYEONBIN MOON</span>
+    <div class="brand-group">
+      <span class="brand">HYEONBIN MOON</span>
+      <span class="nav-updated">Updated Jul 2026</span>
+    </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -330,7 +343,8 @@
     <div class="hero-text">
       <span class="eyebrow">Ph.D. Candidate · Dept. of Mechanical Engineering</span>
       <h1 class="name">Hyeonbin Moon</h1>
-      <p class="role">KAIST, South Korea · Intelligent Design &amp; Manufacturing Lab (Prof. Seunghwa Ryu) · Computational solid mechanics through physics-informed machine learning</p>
+      <p class="role-affiliation">KAIST, South Korea · Intelligent Design &amp; Manufacturing Lab (Prof. Seunghwa Ryu)</p>
+      <p class="role-tagline">Computational solid mechanics through physics-informed machine learning</p>
       <div class="contact-row">
         <a href="mailto:mhb0123@kaist.ac.kr">mhb0123@kaist.ac.kr</a>
         <a href="https://scholar.google.com/citations?hl=en&user=YVXCVJMAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
@@ -516,7 +530,6 @@
   <div class="wrap">
     <span>© 2026 Hyeonbin Moon</span>
     <span>mhb0123@kaist.ac.kr · KAIST</span>
-    <span class="last-updated">Last updated: July 2026</span>
   </div>
 </footer>
 
