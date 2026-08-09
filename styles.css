@@ -4,7 +4,7 @@
   --ink-soft:#6e6e68;
   --line:#e1dfd6;
   --line-strong:#c9c6ba;
-  --accent:#33415c;
+  --accent:#1f4e8c;
   --hover:#f3f2ed;
 }
 
@@ -132,7 +132,7 @@ section:last-of-type{border-bottom:none;}
 .pub-title{font-family:'Source Serif 4',serif;font-size:16.5px;font-weight:600;margin-bottom:5px;color:var(--ink);}
 .pub-meta{font-size:15.5px;color:var(--ink-soft);}
 .pub-meta strong{text-decoration:underline;text-underline-offset:2px;color:var(--ink);}
-.pub-meta em{font-style:italic;font-weight:500;color:var(--ink);}
+.pub-meta em{font-style:italic;font-weight:600;color:var(--accent);}
 .in-press{font-style:italic;font-weight:500;color:var(--ink-soft);}
 .pub-num{
   display:inline-block;font-family:'Public Sans',sans-serif;font-size:15.5px;font-weight:400;
