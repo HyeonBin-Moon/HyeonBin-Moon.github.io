@@ -37,7 +37,8 @@ nav{
   border-bottom:1px solid var(--line);
 }
 nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px;position:relative;}
-nav .brand{font-family:'Public Sans',sans-serif;font-size:14px;letter-spacing:0.08em;color:var(--ink-soft);text-transform:uppercase;}
+nav .brand{font-family:'Public Sans',sans-serif;font-size:14px;letter-spacing:0.08em;color:var(--ink-soft);text-transform:uppercase;border-bottom:none;}
+nav .brand:hover{color:var(--ink);border-bottom:none;}
 .brand-group{display:flex;align-items:center;gap:14px;}
 .nav-updated{
   font-family:'Public Sans',sans-serif;font-size:12px;color:var(--ink-soft);
