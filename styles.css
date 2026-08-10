@@ -68,10 +68,17 @@ header.hero{
   border-bottom:1px solid var(--line);
   background:var(--paper);
 }
-.hero-row{display:flex;gap:38px;align-items:flex-start;position:relative;z-index:1;}
+.hero-row{display:flex;align-items:flex-start;position:relative;z-index:1;}
+.hero-identity{flex:0 0 280px;display:flex;flex-direction:column;padding-right:36px;}
+.hero-identity .avatar{margin-bottom:20px;}
+.hero-about{flex:1;min-width:0;padding-left:36px;border-left:1px solid var(--line);}
+.about-label{
+  display:block;font-family:'Source Serif 4',serif;font-size:15px;font-weight:600;
+  color:var(--ink-soft);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line);
+}
 .avatar{
   flex:0 0 auto;
-  width:128px;height:128px;border-radius:50%;
+  width:148px;height:148px;border-radius:50%;
   padding:0;
   background:none;
   border:1px solid var(--line-strong);
@@ -96,7 +103,7 @@ header.hero{
   letter-spacing:0;text-transform:none;margin-bottom:14px;
 }
 h1.name{
-  font-size:52px;margin-bottom:14px;letter-spacing:-0.02em;
+  font-size:36px;margin-bottom:12px;letter-spacing:-0.01em;
   color:var(--ink);
 }
 .role-affiliation{color:var(--ink-soft);font-size:16.5px;margin:0 0 6px;max-width:64ch;}
@@ -105,7 +112,6 @@ h1.name{
   max-width:60ch;
 }
 .contact-row{display:flex;flex-wrap:wrap;gap:20px;font-family:'Public Sans',sans-serif;font-size:15px;}
-.hero-text .bio{margin-top:22px;}
 .contact-pending{color:var(--ink-soft);opacity:0.5;border-bottom:1px dashed var(--line-strong);cursor:default;}
 
 /* ---------- sections ---------- */
@@ -227,9 +233,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
   nav a::after{display:none;}
 }
 
+@media (max-width:840px){
+  .hero-row{flex-direction:column;gap:28px;}
+  .hero-identity{flex:0 0 auto;padding-right:0;}
+  .hero-about{padding-left:0;border-left:none;padding-top:24px;border-top:1px solid var(--line);}
+}
+
 @media (max-width:600px){
-  .hero-row{flex-direction:column;gap:16px;}
-  h1.name{font-size:34px;}
+  h1.name{font-size:30px;}
 }
 
 @media (prefers-reduced-motion: reduce){
