@@ -105,6 +105,7 @@ h1.name{
   max-width:60ch;
 }
 .contact-row{display:flex;flex-wrap:wrap;gap:20px;font-family:'Public Sans',sans-serif;font-size:15px;}
+.hero-text .bio{margin-top:22px;}
 .contact-pending{color:var(--ink-soft);opacity:0.5;border-bottom:1px dashed var(--line-strong);cursor:default;}
 
 /* ---------- sections ---------- */
