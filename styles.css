@@ -16,7 +16,7 @@ body{
   color:var(--ink);
   font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;
   font-size:17px;
-  line-height:1.6;
+  line-height:1.7;
   -webkit-font-smoothing:antialiased;
 }
 ::selection{background:var(--ink);color:var(--paper);}
@@ -134,8 +134,8 @@ section:last-of-type{border-bottom:none;}
   transition:background 0.15s ease;
 }
 .pub:hover{background:var(--hover);}
-.pub-title{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:17px;font-weight:600;line-height:1.4;margin-bottom:2px;color:var(--ink);}
-.pub-meta{font-size:15px;color:var(--ink-soft);line-height:1.6;}
+.pub-title{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:17px;font-weight:600;margin-bottom:2px;color:var(--ink);}
+.pub-meta{font-size:15px;color:var(--ink-soft);}
 .pub-meta strong{text-decoration:underline;text-underline-offset:2px;color:var(--ink);}
 .pub-meta em{font-style:italic;font-weight:600;color:var(--accent);}
 .in-press{font-style:italic;font-weight:500;color:var(--ink-soft);}
@@ -216,7 +216,7 @@ details.focus-item .focus-body{
   margin:0;
   padding:0 16px 16px;
   font-size:17px;color:var(--ink-soft);
-  text-align:justify;hyphens:auto;max-width:68ch;line-height:1.6;
+  text-align:justify;hyphens:auto;max-width:68ch;
 }
 
 /* misc */
