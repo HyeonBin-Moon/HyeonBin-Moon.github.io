@@ -134,13 +134,13 @@ section:last-of-type{border-bottom:none;}
   transition:background 0.15s ease;
 }
 .pub:hover{background:var(--hover);}
-.pub-title{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:17px;font-weight:600;line-height:1.4;margin-bottom:6px;color:var(--ink);}
+.pub-title{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:17px;font-weight:600;line-height:1.4;margin-bottom:2px;color:var(--ink);}
 .pub-meta{font-size:15px;color:var(--ink-soft);line-height:1.6;}
 .pub-meta strong{text-decoration:underline;text-underline-offset:2px;color:var(--ink);}
 .pub-meta em{font-style:italic;font-weight:600;color:var(--accent);}
 .in-press{font-style:italic;font-weight:500;color:var(--ink-soft);}
 .pub-num{
-  display:inline-block;font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:15px;font-weight:400;
+  display:inline-block;font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:17px;font-weight:500;
   color:var(--ink-soft);margin-right:9px;vertical-align:middle;
 }
 .pub-tag{
