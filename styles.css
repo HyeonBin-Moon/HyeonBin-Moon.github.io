@@ -126,6 +126,9 @@ section:last-of-type{border-bottom:none;}
 .interests span+span::before{content:"  \00b7  ";color:var(--line-strong);}
 
 /* publications */
+.pub-legend{
+  font-size:14px;color:var(--ink-soft);margin:0 0 6px;
+}
 .pub{
   padding:7px 0;border-bottom:1px solid var(--line);
   transition:background 0.15s ease;
@@ -148,6 +151,11 @@ section:last-of-type{border-bottom:none;}
 }
 .tag-journal,.tag-conference,.tag-preprint{color:var(--ink-soft);}
 
+.see-all{
+  margin:14px 0 0;font-size:15px;
+}
+.see-all a{border-bottom:1px solid var(--line-strong);}
+
 /* education */
 .edu-grid{display:flex;flex-direction:column;}
 .edu-item{padding:7px 0;border-bottom:1px solid var(--line);transition:background 0.15s ease;}
@@ -168,6 +176,42 @@ section:last-of-type{border-bottom:none;}
 .award-year{font-family:'Public Sans',sans-serif;font-size:15px;color:var(--ink-soft);flex:0 0 auto;width:44px;}
 .award-name{font-weight:600;font-size:17.5px;color:var(--ink);}
 .award-org{font-size:15.5px;color:var(--ink-soft);}
+
+/* research: current focus (collapsible) */
+.focus-intro{
+  font-size:16px;color:var(--ink-soft);margin:0 0 4px;
+}
+details.focus-item{
+  border-bottom:1px solid var(--line);
+  padding:12px 0;
+}
+details.focus-item:last-child{border-bottom:none;}
+details.focus-item summary{
+  cursor:pointer;
+  list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  font-family:'Source Serif 4',serif;font-size:18.5px;font-weight:600;
+  color:var(--ink);
+  padding:4px 2px;
+  border-radius:2px;
+  transition:background 0.15s ease;
+}
+details.focus-item summary::-webkit-details-marker{display:none;}
+details.focus-item summary::marker{content:"";}
+details.focus-item summary:hover{background:var(--hover);}
+details.focus-item summary::after{
+  content:"+";
+  flex:0 0 auto;
+  font-family:'Public Sans',sans-serif;font-size:20px;font-weight:400;
+  color:var(--ink-soft);
+  width:20px;text-align:center;
+}
+details.focus-item[open] summary::after{content:"\2212";}
+details.focus-item .focus-body{
+  margin:10px 2px 2px;
+  font-size:16px;color:var(--ink-soft);
+  text-align:justify;hyphens:auto;max-width:68ch;line-height:1.6;
+}
 
 /* misc */
 .misc-item{
