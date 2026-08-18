@@ -27,7 +27,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset
 
 h1,h2,h3{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-weight:600;margin:0;letter-spacing:-0.01em;line-height:1.2;}
 
-.wrap{max-width:1160px;margin:0 auto;padding:0 36px;}
+.wrap{max-width:1000px;margin:0 auto;padding:0 36px;}
 
 /* ---------- nav ---------- */
 nav{
@@ -100,10 +100,9 @@ h1.name{
   font-size:40px;margin-bottom:10px;letter-spacing:-0.01em;
   color:var(--ink);
 }
-.role-affiliation{color:var(--ink-soft);font-size:16.5px;margin:0 0 6px;max-width:64ch;}
+.role-affiliation{color:var(--ink-soft);font-size:16.5px;margin:0 0 6px;}
 .role-tagline{
   color:var(--ink-soft);font-size:17.5px;margin:0 0 22px;font-style:italic;
-  max-width:60ch;
 }
 .contact-row{display:flex;flex-wrap:wrap;gap:20px;font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:15px;}
 .contact-pending{color:var(--ink-soft);opacity:0.5;border-bottom:1px dashed var(--line-strong);cursor:default;}
@@ -119,7 +118,7 @@ section:last-of-type{border-bottom:none;}
 .section-head h2{font-size:20px;font-weight:600;letter-spacing:-0.005em;}
 .section-head .note{margin-left:4px;}
 
-.bio p{color:var(--ink);font-size:17px;text-align:justify;hyphens:auto;max-width:68ch;}
+.bio p{color:var(--ink);font-size:17px;text-align:justify;hyphens:auto;}
 .interests{margin-top:20px;font-size:14.5px;color:var(--ink-soft);}
 .interests span{color:var(--ink-soft);}
 .interests span+span::before{content:"  \00b7  ";color:var(--line-strong);}
@@ -216,7 +215,7 @@ details.focus-item .focus-body{
   margin:0;
   padding:0 16px 16px;
   font-size:17px;color:var(--ink-soft);
-  text-align:justify;hyphens:auto;max-width:68ch;
+  text-align:justify;hyphens:auto;
 }
 
 /* misc */
@@ -261,7 +260,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 }
 .page-banner .eyebrow{margin-bottom:12px;}
 .page-banner h1{font-size:34px;letter-spacing:-0.01em;color:var(--ink);}
-.page-banner p{color:var(--ink-soft);font-size:16.5px;margin-top:8px;max-width:60ch;}
+.page-banner p{color:var(--ink-soft);font-size:16.5px;margin-top:8px;}
 
 @media (max-width:680px){
   .nav-toggle{display:flex;}
