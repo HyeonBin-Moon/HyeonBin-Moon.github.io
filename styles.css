@@ -123,6 +123,11 @@ section:last-of-type{border-bottom:none;}
 .interests span{color:var(--ink-soft);}
 .interests span+span::before{content:"  \00b7  ";color:var(--line-strong);}
 
+/* journal reviewer list */
+.journal-list{font-size:16px;color:var(--ink-soft);line-height:1.6;}
+.journal-list span{color:var(--ink-soft);}
+.journal-list span+span::before{content:", ";color:var(--ink-soft);}
+
 /* publications */
 .pub-legend{
   font-size:13px;font-weight:400;color:var(--ink-soft);letter-spacing:0;
@@ -156,7 +161,10 @@ section:last-of-type{border-bottom:none;}
 .edu-item:hover{background:var(--hover);}
 .edu-degree{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:17px;font-weight:600;margin-bottom:3px;color:var(--ink);}
 .edu-meta{font-size:15px;color:var(--ink-soft);}
-.edu-dates{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:15px;color:var(--ink-soft);}
+.edu-dates{
+  font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:14px;font-weight:400;
+  color:var(--ink-soft);margin-left:8px;
+}
 
 /* awards */
 .award-grid{display:flex;flex-direction:column;}
@@ -234,7 +242,10 @@ details.focus-item .focus-body{
   border-radius:50%;background:var(--paper);border:1.5px solid var(--ink-soft);
   box-sizing:border-box;
 }
-.talk-date{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:15px;color:var(--ink-soft);}
+.talk-date{
+  display:inline;font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:15px;font-weight:400;
+  color:var(--ink-soft);
+}
 .talk-title{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-weight:600;margin:2px 0;font-size:17px;color:var(--ink);}
 .talk-place{font-size:15px;color:var(--ink-soft);}
 .talk-tag{
