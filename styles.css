@@ -178,6 +178,27 @@ section:last-of-type{border-bottom:none;}
 .award-name{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-weight:600;font-size:17px;color:var(--ink);}
 .award-org{font-size:15px;color:var(--ink-soft);}
 
+/* research grants & projects */
+.grant-grid{display:flex;flex-direction:column;}
+.grant-item{padding:9px 0;border-bottom:1px solid var(--line);transition:background 0.15s ease;}
+.grant-item:last-child{border-bottom:none;}
+.grant-item:hover{background:var(--hover);}
+.grant-title{
+  font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;
+  font-size:17px;font-weight:600;margin-bottom:3px;color:var(--ink);
+}
+.grant-role{
+  display:inline-block;font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;
+  font-size:12px;font-weight:600;
+  border:1px solid var(--line-strong);border-radius:3px;padding:1px 7px;margin-right:9px;vertical-align:middle;
+  color:var(--ink-soft);text-transform:uppercase;letter-spacing:0.03em;
+}
+.grant-dates{
+  font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe UI', sans-serif;font-size:14px;font-weight:400;
+  color:var(--ink-soft);margin-left:8px;
+}
+.grant-meta{font-size:15px;color:var(--ink-soft);}
+
 /* research: current focus (collapsible) */
 .focus-intro{
   font-size:17px;color:var(--ink-soft);margin:0 0 4px;
