@@ -345,5 +345,5 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 .talk-tag{color:var(--accent);border-color:#C9D6E8;background:#EDF1F9;}
 .award-year{color:var(--accent);font-weight:600;}
 /* first / co-first author: orange number */
-.pub.first .pub-num{color:#D4782F;}
-.pub-key{color:#D4782F;}
+.pub.first .pub-num{color:#D35400;}
+.pub-key{color:#D35400;}
