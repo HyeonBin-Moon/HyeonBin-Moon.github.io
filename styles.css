@@ -1,11 +1,11 @@
 :root{
-  --paper:#fbfaf7;
-  --ink:#1c1c1a;
-  --ink-soft:#6e6e68;
-  --line:#e1dfd6;
-  --line-strong:#c9c6ba;
-  --accent:#1f4e8c;
-  --hover:#f3f2ed;
+  --paper:#FAFBFC;
+  --ink:#2F2F2F;
+  --ink-soft:#585858;
+  --line:#D9DEE7;
+  --line-strong:#BFC7D5;
+  --accent:#466E90;
+  --hover:#F3F5F7;
 }
 
 *{box-sizing:border-box;}
@@ -32,7 +32,7 @@ h1,h2,h3{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe U
 /* ---------- nav ---------- */
 nav{
   position:sticky;top:0;z-index:10;
-  background:rgba(251,250,247,0.92);
+  background:rgba(250,251,252,0.92);
   backdrop-filter:blur(6px);
   border-bottom:1px solid var(--line);
 }
@@ -214,7 +214,7 @@ details.focus-item{
 details.focus-item:last-child{margin-bottom:0;}
 details.focus-item:hover{
   border-color:var(--ink-soft);
-  box-shadow:0 2px 10px rgba(28,28,26,0.06);
+  box-shadow:0 2px 10px rgba(47,47,47,0.06);
 }
 details.focus-item[open]{
   border-color:var(--ink-soft);
@@ -324,11 +324,23 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 .key-work{margin:12px 0 0;padding:10px 14px;border-left:3px solid var(--line-strong);background:var(--hover);font-size:15px;line-height:1.55;}
 .key-work b{font-weight:600;}
 .status-pill{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.02em;border-radius:999px;padding:1px 9px;margin-left:auto;margin-right:14px;border:1px solid;}
-.status-pill.done{color:#1f4e8c;border-color:#b9cbe6;background:#f1f5fb;}
-.status-pill.next{color:#8a6400;border-color:#e6d39b;background:#fdf8e8;}
+.status-pill.done{color:#466E90;border-color:#C9D6E8;background:#EDF1F9;}
+.status-pill.next{color:#8A6A1F;border-color:#EAD9A8;background:#FFF7E1;}
 .next-list{margin:10px 0 0;padding-left:20px;}
 .next-list li{margin:6px 0;}
 
 /* first / co-first author: accent-colored number */
 .pub.first .pub-num{color:var(--accent);font-weight:700;}
 .pub-key{color:var(--accent);font-weight:700;}
+
+/* PPT palette accents: one color per focus area (same as the research app) */
+#focus details.focus-item{border-left:4px solid var(--fc,var(--accent));}
+#focus details.focus-item:nth-of-type(1){--fc:#B0646A;--fb:#FFEFEF;}
+#focus details.focus-item:nth-of-type(2){--fc:#446B9E;--fb:#EDF1F9;}
+#focus details.focus-item:nth-of-type(3){--fc:#5E8C5A;--fb:#EAF4E4;}
+#focus details.focus-item:nth-of-type(4){--fc:#B58A2E;--fb:#FFF7E1;}
+#focus details.focus-item[open] summary{background:var(--fb);color:var(--fc);}
+#focus details.focus-item summary:hover{background:var(--fb);}
+#focus .key-work{background:var(--fb,var(--hover));border-left-color:var(--fc,var(--line-strong));}
+.talk-tag{color:var(--accent);border-color:#C9D6E8;background:#EDF1F9;}
+.award-year{color:var(--accent);font-weight:600;}
