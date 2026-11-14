@@ -344,6 +344,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 #focus .key-work{background:var(--fb,var(--hover));border-left-color:var(--fc,var(--line-strong));}
 .talk-tag{color:var(--accent);border-color:#C9D6E8;background:#EDF1F9;}
 .award-year{color:var(--accent);font-weight:600;}
-/* first / co-first author: solid accent badge */
-.pub.first .pub-num{background:var(--accent);color:#fff;font-weight:700;border-radius:6px;padding:1px 7px;min-width:30px;text-align:center;}
-.pub-key{display:inline-block;background:var(--accent);color:#fff;font-weight:700;border-radius:5px;padding:0 6px;font-size:12px;line-height:1.5;}
+/* first / co-first author: bold accent number */
+.pub.first .pub-num{color:#D4782F;font-weight:800;font-size:17.5px;}
+.pub-key{color:#D4782F;font-weight:800;}
