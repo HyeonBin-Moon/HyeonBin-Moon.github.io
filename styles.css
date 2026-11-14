@@ -1,5 +1,5 @@
 :root{
-  --paper:#FAFBFC;
+  --paper:#FFFFFF;
   --ink:#2F2F2F;
   --ink-soft:#585858;
   --line:#D9DEE7;
@@ -32,7 +32,7 @@ h1,h2,h3{font-family:Arial, Helvetica, 'Helvetica Neue', -apple-system, 'Segoe U
 /* ---------- nav ---------- */
 nav{
   position:sticky;top:0;z-index:10;
-  background:rgba(250,251,252,0.92);
+  background:rgba(255,255,255,0.94);
   backdrop-filter:blur(6px);
   border-bottom:1px solid var(--line);
 }
@@ -330,8 +330,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 .next-list li{margin:6px 0;}
 
 /* first / co-first author: accent-colored number */
-.pub.first .pub-num{color:var(--accent);font-weight:700;}
-.pub-key{color:var(--accent);font-weight:700;}
+
+
 
 /* PPT palette accents: one color per focus area (same as the research app) */
 #focus details.focus-item{border-left:4px solid var(--fc,var(--accent));}
@@ -344,3 +344,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 #focus .key-work{background:var(--fb,var(--hover));border-left-color:var(--fc,var(--line-strong));}
 .talk-tag{color:var(--accent);border-color:#C9D6E8;background:#EDF1F9;}
 .award-year{color:var(--accent);font-weight:600;}
+/* first / co-first author: solid accent badge */
+.pub.first .pub-num{background:var(--accent);color:#fff;font-weight:700;border-radius:6px;padding:1px 7px;min-width:30px;text-align:center;}
+.pub-key{display:inline-block;background:var(--accent);color:#fff;font-weight:700;border-radius:5px;padding:0 6px;font-size:12px;line-height:1.5;}
