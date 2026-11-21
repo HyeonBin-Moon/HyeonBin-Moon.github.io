@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Research — Hyeonbin Moon">
 <meta name="twitter:description" content="Research overview and current focus areas of Hyeonbin Moon, Ph.D. candidate in Mechanical Engineering at KAIST.">
 
-<link rel="stylesheet" href="styles.css?v=20261121a">
+<link rel="stylesheet" href="styles.css?v=20261121h">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,7 +44,7 @@
 <nav>
   <div class="wrap">
     <div class="brand-group">
-      <a class="brand" href="index.html">HYEONBIN MOON</a>
+      <a class="brand" href="index.html">Hyeonbin Moon&rsquo;s Homepage</a>
       <span class="nav-updated">Updated Nov 2026</span>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -62,7 +62,7 @@
 <div class="page-banner">
   <div class="wrap">
     <h1>Research</h1>
-    <p>Bringing mechanics, simulation, and machine learning together for real engineering systems.</p>
+    <p>Mechanics, simulation, and machine learning for engineering systems.</p>
   </div>
 </div>
 
@@ -70,29 +70,27 @@
   <div class="wrap">
     <div class="bio">
       <p>
-        Mechanics gives us the language for how materials and structures respond to load, heat, and
-        deformation. The finite element method turned that language into predictive engineering tools, and
-        machine learning now adds a third capability: learning directly from data.
+        Mechanics describes how materials and structures respond to load, heat, and deformation, and the finite
+        element method turns that description into engineering predictions. Machine learning adds something new:
+        models that learn directly from data.
       </p>
       <p>
-        These three build on one another &mdash; mechanics supplies the governing equations, and simulation
-        supplies a benchmark for physical validity. Yet purely data-driven models usually treat mechanics and
-        simulation only as sources of training data, not as structure inside the model. That becomes a real
-        limitation when engineering data is sparse, noisy, or only indirectly related to what we want to know.
+        In practice, though, most data-driven models use mechanics and simulation only to generate training
+        data, not as part of the model itself. This becomes a problem when engineering data are sparse, noisy,
+        or only indirectly related to the quantity we care about.
       </p>
       <p>
-        My research closes this gap by building governing equations and numerical structure directly into the
-        learning framework. Grounded in mechanics and numerical analysis, these physics-informed models stay
-        physically consistent and dependable even when data is severely limited.
-        In this way I have discovered hyperelastic constitutive laws from a single test, inferred thermoelectric and
-        flexoelectric properties without property labels, and built surrogates that generalize to unseen materials and
-        geometries.
+        My research builds governing equations and numerical structure into the learning itself, so that the
+        models stay physically consistent even with very little data. I have used this to discover hyperelastic
+        constitutive laws from a single test, to infer thermoelectric and flexoelectric properties without
+        property labels, and to build surrogates that work for materials and geometries they were not trained
+        on.
       </p>
       <p>
-        In the long run, I want to narrow the distance between simulation and the real world in both accuracy
-        and trust. A prediction without a measure of confidence is of limited use for an engineering decision,
-        so I treat physics-informed modeling and uncertainty quantification as inseparable &mdash; toward
-        real-time, physically consistent digital twins that can be deployed with confidence.
+        Looking ahead, I want simulations that can be trusted in real time. A prediction is only useful for an
+        engineering decision if we also know how confident it is, so I see physics-informed modeling and
+        uncertainty quantification as two parts of the same goal: digital twins that are fast, physically
+        consistent, and honest about their uncertainty.
       </p>
     </div>
   </div>
@@ -102,16 +100,15 @@
   <div class="wrap">
     <div class="section-head"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><h2>Current Focus</h2></div>
 
-    <p class="focus-intro">I'm currently focusing on the following:</p>
+    <p class="focus-intro">These are the topics I am working on now:</p>
 
     <details class="focus-item" open>
       <summary>Mechanics-Based Material &amp; Structural Modeling</summary>
       <div class="focus-body">
         Constitutive theory and finite element modeling describe how materials and structures respond to
-        mechanical, thermal, and coupled multiphysics loading. This is the foundation layer: it fixes the governing
-        equations, boundary conditions, and discretization that every learning-based model further down must stay
-        consistent with. Without it, data-driven components would have nothing to be grounded in, and predictions
-        would reduce to pattern matching with no guarantee of physical plausibility.
+        mechanical, thermal, and coupled loading. This is the base of everything else I do: it fixes the
+        governing equations, boundary conditions, and discretization that any learned model has to respect.
+        Without it, a data-driven model has nothing to stay consistent with.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-12">[12]</a> flexoelectric origin of frictional contrast on ferroelectrics (Science Advances, 2026) &middot; <a href="publications.html#pub-11">[11]</a> energy-based flexoelectric framework (IJNME, 2026) &middot; <a href="publications.html#pub-16">[16]</a> hybrid GNN&ndash;FEM for phase-field fracture (Eng. Fract. Mech., 2027)</div>
       </div>
     </details>
@@ -119,12 +116,10 @@
     <details class="focus-item">
       <summary>Physics-Informed Machine Learning</summary>
       <div class="focus-body">
-        Governing equations and numerical structure are built directly into neural network training &mdash;
-        through physics-informed neural networks, neural operators, and differentiable simulation &mdash; rather than
-        learned from data alone. This is the bridge from the mechanics foundation to practical prediction: because
-        the physics constrains the space of admissible solutions, a model can be trained on far less data and
-        extrapolates more safely. It matters most where experiments or high-fidelity simulations are expensive, and
-        where behaving well outside the observed conditions matters more than fitting them.
+        I build governing equations and numerical structure into neural network training, using physics-informed
+        neural networks, neural operators, and differentiable simulation. Because the physics limits which
+        solutions are allowed, these models need far less data and behave more sensibly outside the training
+        range. This matters most when experiments or high-fidelity simulations are expensive.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-5">[5]</a> hyperelastic law discovery from scarce data (CMAME, 2025) &middot; <a href="publications.html#pub-6">[6]</a> label-free thermoelectric inference with neural operators (npj Comput. Mater., 2025) &middot; <a href="publications.html#pub-15">[15]</a> differentiable FEM vs. PINN for inverse analysis (CACIE, 2026) &middot; <a href="publications.html#pub-9">[9]</a> perspective on PIML for material characterization (2025)</div>
       </div>
     </details>
@@ -132,11 +127,10 @@
     <details class="focus-item">
       <summary>Reduced-Order Modeling for Real-Time Simulation</summary>
       <div class="focus-body">
-        Intrusive and stochastic reduced-order models compress high-fidelity simulations into low-dimensional
-        representations that run orders of magnitude faster while keeping the physical structure of the full model.
-        They resolve a practical bottleneck: accurate simulations are often too slow for applications that need
-        immediate feedback, such as monitoring or control. Reduced-order modeling makes real-time deployment possible
-        without discarding the physics that makes a prediction trustworthy.
+        Reduced-order models compress a high-fidelity simulation into a few modes that run orders of magnitude
+        faster while keeping its physical structure. I work on intrusive and stochastic versions of these
+        models, because applications such as monitoring and control need answers faster than a full simulation
+        can give them.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-16">[16]</a> physics-regularized GNN&ndash;FEM surrogate that generalizes across geometries and meshes (Eng. Fract. Mech., 2027)</div>
       </div>
     </details>
@@ -144,11 +138,10 @@
     <details class="focus-item">
       <summary>Uncertainty Quantification for Trustworthy Prediction</summary>
       <div class="focus-body">
-        A prediction alone cannot support an engineering decision; it needs a quantified degree of confidence.
-        This work develops frameworks that estimate that confidence from the model itself, so that a result is not
-        just a number but a statement of how far the number can be trusted. In structural health monitoring and
-        digital twins, where an overconfident wrong answer can be costly, knowing when not to trust a model is as
-        important as the prediction itself.
+        An engineering decision needs not only a prediction but also a sense of how much to trust it. I work on
+        estimating that confidence from the model itself. In structural health monitoring and digital twins,
+        where an overconfident wrong answer can be costly, knowing when not to trust a model matters as much as
+        the prediction.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-13">[13]</a> Bayesian neural networks separating aleatoric and epistemic uncertainty for SHM (IJPEM-GT, 2026)</div>
       </div>
     </details>
