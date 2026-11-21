@@ -333,15 +333,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 
 
 
-/* PPT palette accents: one color per focus area (same as the research app) */
-#focus details.focus-item{border-left:4px solid var(--fc,var(--accent));}
-#focus details.focus-item:nth-of-type(1){--fc:#B0646A;--fb:#FFEFEF;}
-#focus details.focus-item:nth-of-type(2){--fc:#446B9E;--fb:#EDF1F9;}
-#focus details.focus-item:nth-of-type(3){--fc:#5E8C5A;--fb:#EAF4E4;}
-#focus details.focus-item:nth-of-type(4){--fc:#B58A2E;--fb:#FFF7E1;}
-#focus details.focus-item[open] summary{background:var(--fb);color:var(--fc);}
-#focus details.focus-item summary:hover{background:var(--fb);}
-#focus .key-work{background:var(--fb,var(--hover));border-left-color:var(--fc,var(--line-strong));}
 .talk-tag{color:var(--accent);border-color:#C9D6E8;background:#EDF1F9;}
 .award-year{color:var(--accent);font-weight:600;}
 /* first / co-first author: orange number */
