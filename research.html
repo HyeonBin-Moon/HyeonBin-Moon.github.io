@@ -84,11 +84,10 @@
         or only indirectly related to the quantity we care about.
       </p>
       <p>
-        My research builds governing equations and numerical structure into the learning itself, so that the
-        models stay physically consistent even with very little data. I have used this to discover hyperelastic
-        constitutive laws from a single test, to infer thermoelectric and flexoelectric properties without
-        property labels, and to build surrogates that work for materials and geometries they were not trained
-        on.
+        My research builds physical laws and numerical structure into the learning itself, so that models stay
+        physically consistent even with very little data. I apply this idea in two directions: understanding how
+        materials behave from limited measurements, and predicting how structures respond faster than
+        conventional simulation while still generalizing beyond the training data.
       </p>
       <p>
         Looking ahead, I want simulations that can be trusted in real time. A prediction is only useful for an
@@ -109,10 +108,9 @@
     <details class="focus-item" open>
       <summary>Mechanics-Based Material &amp; Structural Modeling</summary>
       <div class="focus-body">
-        Constitutive theory and finite element modeling describe how materials and structures respond to
-        mechanical, thermal, and coupled loading. This is the base of everything else I do: it fixes the
-        governing equations, boundary conditions, and discretization that any learned model has to respect.
-        Without it, a data-driven model has nothing to stay consistent with.
+        Mechanics-based modeling of materials and structures provides the governing equations, constitutive
+        behavior, and numerical discretization that every learned model in my work has to respect. It is the
+        foundation the rest of my research builds on.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-12">[12]</a> flexoelectric origin of frictional contrast on ferroelectrics (Science Advances, 2026) &middot; <a href="publications.html#pub-11">[11]</a> energy-based flexoelectric framework (IJNME, 2026) &middot; <a href="publications.html#pub-16">[16]</a> hybrid GNN&ndash;FEM for phase-field fracture (Eng. Fract. Mech., 2027)</div>
       </div>
     </details>
@@ -120,10 +118,9 @@
     <details class="focus-item">
       <summary>Physics-Informed Machine Learning</summary>
       <div class="focus-body">
-        I build governing equations and numerical structure into neural network training, using physics-informed
-        neural networks, neural operators, and differentiable simulation. Because the physics limits which
-        solutions are allowed, these models need far less data and behave more sensibly outside the training
-        range. This matters most when experiments or high-fidelity simulations are expensive.
+        I build physical laws and numerical structure into machine learning models. Because the physics limits
+        which solutions are possible, these models need much less data and remain reliable outside the
+        conditions they were trained on.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-5">[5]</a> hyperelastic law discovery from scarce data (CMAME, 2025) &middot; <a href="publications.html#pub-6">[6]</a> label-free thermoelectric inference with neural operators (npj Comput. Mater., 2025) &middot; <a href="publications.html#pub-15">[15]</a> differentiable FEM vs. PINN for inverse analysis (CACIE, 2026) &middot; <a href="publications.html#pub-9">[9]</a> perspective on PIML for material characterization (2025)</div>
       </div>
     </details>
@@ -131,10 +128,9 @@
     <details class="focus-item">
       <summary>Reduced-Order Modeling for Real-Time Simulation</summary>
       <div class="focus-body">
-        Reduced-order models compress a high-fidelity simulation into a few modes that run orders of magnitude
-        faster while keeping its physical structure. I work on intrusive and stochastic versions of these
-        models, because applications such as monitoring and control need answers faster than a full simulation
-        can give them.
+        Reduced-order models make high-fidelity simulation fast enough for real-time use while keeping its
+        physical structure. I am interested in how such models can stay accurate and trustworthy as operating
+        conditions change.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-16">[16]</a> physics-regularized GNN&ndash;FEM surrogate that generalizes across geometries and meshes (Eng. Fract. Mech., 2027)</div>
       </div>
     </details>
@@ -143,9 +139,8 @@
       <summary>Uncertainty Quantification for Trustworthy Prediction</summary>
       <div class="focus-body">
         An engineering decision needs not only a prediction but also a sense of how much to trust it. I work on
-        estimating that confidence from the model itself. In structural health monitoring and digital twins,
-        where an overconfident wrong answer can be costly, knowing when not to trust a model matters as much as
-        the prediction.
+        quantifying that confidence for physics-based and data-driven models, so that their predictions can
+        support real decisions.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-13">[13]</a> Bayesian neural networks separating aleatoric and epistemic uncertainty for SHM (IJPEM-GT, 2026)</div>
       </div>
     </details>
