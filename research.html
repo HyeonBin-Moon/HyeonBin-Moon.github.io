@@ -107,8 +107,11 @@
       <summary>Mechanics-Based Material &amp; Structural Modeling</summary>
       <div class="focus-body">
         Continuum mechanics and finite element analysis describe how materials deform, fracture, and respond to
-        coupled mechanical, thermal, and electrical loads. Their constitutive laws, energy principles, and
-        discretizations also supply the physics built into the learning models described below.
+        coupled mechanical, thermal, and electrical loads. Work in this area covers constitutive modeling,
+        multiphysics coupling, and fracture, and uses mechanics to explain what experiments observe at scales
+        where direct measurement is difficult. The constitutive laws, energy principles, and discretizations
+        from this foundation also supply the physics built into the learning models described below, so advances
+        here directly shape what those models can represent.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-12">[12]</a> flexoelectric origin of frictional contrast on ferroelectrics (Science Advances, 2026) &middot; <a href="publications.html#pub-11">[11]</a> energy-based flexoelectric framework (IJNME, 2026) &middot; <a href="publications.html#pub-16">[16]</a> hybrid GNN&ndash;FEM for phase-field fracture (Eng. Fract. Mech., 2027)</div>
       </div>
     </details>
@@ -119,7 +122,10 @@
         Physics-informed machine learning builds governing equations, energy principles, and numerical structure
         directly into the model. With the physics ruling out unrealistic solutions, these models learn from far
         less data, infer properties that cannot be measured directly, and remain reliable outside the training
-        range.
+        range. Physics can enter as a soft penalty in the loss or as a hard constraint through the architecture
+        or a differentiable solver, and that choice affects accuracy, cost, and robustness. Applications include
+        identifying material behavior from limited tests, predicting full-field responses, and solving inverse
+        problems in design and manufacturing.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-5">[5]</a> hyperelastic law discovery from scarce data (CMAME, 2025) &middot; <a href="publications.html#pub-6">[6]</a> label-free thermoelectric inference with neural operators (npj Comput. Mater., 2025) &middot; <a href="publications.html#pub-15">[15]</a> differentiable FEM vs. PINN for inverse analysis (CACIE, 2026) &middot; <a href="publications.html#pub-9">[9]</a> perspective on PIML for material characterization (2025)</div>
       </div>
     </details>
@@ -128,8 +134,11 @@
       <summary>Reduced-Order Modeling for Real-Time Simulation</summary>
       <div class="focus-body">
         High-fidelity simulation is often too slow for design iteration and online use. Reduced-order and
-        surrogate models keep the essential physics while running in near real time; the open question is how to
-        keep them accurate under new geometries, loads, and operating conditions.
+        surrogate models keep the essential physics while running in near real time, which makes repeated
+        evaluation and rapid what-if analysis practical. The open question is how to keep them accurate under
+        geometries, loads, and operating conditions that were not part of the training data. Combining learned
+        components with physics-based solvers, rather than replacing the solver entirely, is one route to models
+        that are both fast and transferable.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-16">[16]</a> physics-regularized GNN&ndash;FEM surrogate that generalizes across geometries and meshes (Eng. Fract. Mech., 2027)</div>
       </div>
     </details>
@@ -139,7 +148,10 @@
       <div class="focus-body">
         A prediction can guide an engineering decision only when its reliability is known. Uncertainty
         quantification separates noise in the data from gaps in the model and attaches a confidence level to
-        each prediction, so that a digital twin can report how far its outputs can be trusted.
+        each prediction. The distinction matters in practice: noise calls for better measurements, while model
+        uncertainty calls for more data or a better model. Combined with fast physics-based models, uncertainty
+        estimates let a digital twin report not only what a structure is doing but also how far that assessment
+        can be trusted.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-13">[13]</a> Bayesian neural networks separating aleatoric and epistemic uncertainty for SHM (IJPEM-GT, 2026)</div>
       </div>
     </details>
