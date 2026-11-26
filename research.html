@@ -103,14 +103,12 @@
   <div class="wrap">
     <div class="section-head"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><h2>Current Focus</h2></div>
 
-    <p class="focus-intro">These are the topics I am working on now:</p>
-
     <details class="focus-item" open>
       <summary>Mechanics-Based Material &amp; Structural Modeling</summary>
       <div class="focus-body">
-        Mechanics-based modeling of materials and structures provides the governing equations, constitutive
-        behavior, and numerical discretization that every learned model in my work has to respect. It is the
-        foundation the rest of my research builds on.
+        Continuum mechanics and finite element analysis describe how materials deform, fracture, and respond to
+        coupled mechanical, thermal, and electrical loads. Their constitutive laws, energy principles, and
+        discretizations also supply the physics built into the learning models described below.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-12">[12]</a> flexoelectric origin of frictional contrast on ferroelectrics (Science Advances, 2026) &middot; <a href="publications.html#pub-11">[11]</a> energy-based flexoelectric framework (IJNME, 2026) &middot; <a href="publications.html#pub-16">[16]</a> hybrid GNN&ndash;FEM for phase-field fracture (Eng. Fract. Mech., 2027)</div>
       </div>
     </details>
@@ -118,9 +116,10 @@
     <details class="focus-item">
       <summary>Physics-Informed Machine Learning</summary>
       <div class="focus-body">
-        I build physical laws and numerical structure into machine learning models. Because the physics limits
-        which solutions are possible, these models need much less data and remain reliable outside the
-        conditions they were trained on.
+        Physics-informed machine learning builds governing equations, energy principles, and numerical structure
+        directly into the model. With the physics ruling out unrealistic solutions, these models learn from far
+        less data, infer properties that cannot be measured directly, and remain reliable outside the training
+        range.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-5">[5]</a> hyperelastic law discovery from scarce data (CMAME, 2025) &middot; <a href="publications.html#pub-6">[6]</a> label-free thermoelectric inference with neural operators (npj Comput. Mater., 2025) &middot; <a href="publications.html#pub-15">[15]</a> differentiable FEM vs. PINN for inverse analysis (CACIE, 2026) &middot; <a href="publications.html#pub-9">[9]</a> perspective on PIML for material characterization (2025)</div>
       </div>
     </details>
@@ -128,9 +127,9 @@
     <details class="focus-item">
       <summary>Reduced-Order Modeling for Real-Time Simulation</summary>
       <div class="focus-body">
-        Reduced-order models make high-fidelity simulation fast enough for real-time use while keeping its
-        physical structure. I am interested in how such models can stay accurate and trustworthy as operating
-        conditions change.
+        High-fidelity simulation is often too slow for design iteration and online use. Reduced-order and
+        surrogate models keep the essential physics while running in near real time; the open question is how to
+        keep them accurate under new geometries, loads, and operating conditions.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-16">[16]</a> physics-regularized GNN&ndash;FEM surrogate that generalizes across geometries and meshes (Eng. Fract. Mech., 2027)</div>
       </div>
     </details>
@@ -138,9 +137,9 @@
     <details class="focus-item">
       <summary>Uncertainty Quantification for Trustworthy Prediction</summary>
       <div class="focus-body">
-        An engineering decision needs not only a prediction but also a sense of how much to trust it. I work on
-        quantifying that confidence for physics-based and data-driven models, so that their predictions can
-        support real decisions.
+        A prediction can guide an engineering decision only when its reliability is known. Uncertainty
+        quantification separates noise in the data from gaps in the model and attaches a confidence level to
+        each prediction, so that a digital twin can report how far its outputs can be trusted.
         <div class="key-work"><b>Related work</b> &nbsp;<a href="publications.html#pub-13">[13]</a> Bayesian neural networks separating aleatoric and epistemic uncertainty for SHM (IJPEM-GT, 2026)</div>
       </div>
     </details>
